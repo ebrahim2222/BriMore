@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.brikotlin.domain.model.main.brands.BrandsDetails" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="325dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/corner_all_sides">
+
+        <ImageView
+            setImage="@{model.logo}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="121dp"
+            android:layout_height="37.49dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="37.5dp"
+            android:layout_marginBottom="25.5dp">
+
+            <TextView
+                android:id="@+id/main_brand_see_all"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="60dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="14dp"
+                android:text="SEE MORE"
+                android:textSize="12dp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="28.8dp"
+                android:layout_height="29.62dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/rectangle_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:layout_width="6.58dp"
+                    android:layout_height="11.52dp"
+                    android:background="@drawable/path_11"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
